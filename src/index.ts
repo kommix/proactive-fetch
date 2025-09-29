@@ -15,6 +15,15 @@ import fetchJSON, { ResponseError } from './fetchJSON'
 // Export core functionality
 export { configureRefreshFetch, fetchJSON, ResponseError }
 
+// Export environment detection
+export * from './environment'
+
+// Export React Native platform support
+export * from './platforms/react-native'
+
+// Export React hooks (optional peer dependency)
+export * from './hooks'
+
 // Export types for consumers
 export type {
   RefreshConfiguration,
